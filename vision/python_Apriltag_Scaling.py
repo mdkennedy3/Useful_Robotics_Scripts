@@ -31,7 +31,6 @@ class Generate_Scaled_Apriltags(object):
         with open(fname, 'rb') as inf, open(outname, 'wb') as ouf:
             inpdf = PdfFileReader(inf) 
             outpdf = PdfFileWriter()
-            print "tag number", tag_numbers
             inPages = [inpdf.getPage(t) for t in tag_numbers]
             (w,h) = inPages[0].mediaBox.upperRight
             o = PageObject.createBlankPage(outpdf, w,h) 
@@ -39,7 +38,6 @@ class Generate_Scaled_Apriltags(object):
             rowIdx = 0
             colIdx = 0
             for p in inPages:
-                print "scalef", type(scale_factor), "rowidx", type(float(rowIdx)), "margin_factor", type(margin_factor), "w", type(w), "h", type(h)
                 o.mergeScaledTranslatedPage(p, scale_factor,
                                         (scale_factor*float(rowIdx) + margin_factor)*float(w),
                                         (scale_factor*colIdx + margin_factor)*float(h) )
@@ -58,9 +56,9 @@ class Generate_Scaled_Apriltags(object):
 def main(argv):
     print "obtaining file"
     try: 
-        opts, args = getopt.getopt(argv, "hf:o:t:lo:lf",["file_name=","ouput_name=","tag_numbers=","original_length=", "final_length="])
+        opts, args = getopt.getopt(argv, "hf:o:t:lo:ld:",["file_name=","ouput_name=","tag_numbers=","original_length=", "final_length="])
     except getopt.GetoptError:
-        print "pyAprilScale.py -f /full/path/to/file  -o file_output_name --t='[0,1,2]' -lo orig_length_mm  -lf des_length_mm "
+        print "pyAprilScale.py -f /full/path/to/file -lo orig_length_mm  -ld= des_length_mm --t='[0,1,2]'  -o file_output_name   "
 
 
     out_dir = []
@@ -73,7 +71,7 @@ def main(argv):
 
     for opt, arg in opts:
         if opt == '-h':
-            print "pyAprilScale.py -f /full/path/to/file  -o file_output_name"
+            print "pyAprilScale.py -f /full/path/to/file -lo orig_length_mm  -ld= des_length_mm --t='[0,1,2]'  -o file_output_name  "
             sys.exit()
         elif opt in ["-f","--file_name"]:
             file_input = arg
@@ -82,9 +80,9 @@ def main(argv):
         elif opt in ["-t", "--tag_numbers"]:
             tag_numbers = ast.literal_eval(arg)
         elif opt in ["-lo","original_length"]:
-            orig_tag_side_length = float(arg)
-        elif opt in ["-lf","final_length"]:
-            desired_tag_side_length = float(arg)
+            orig_tag_side_length = ast.literal_eval(arg)
+        elif opt in ["-ld","final_length"]:
+            desired_tag_side_length = ast.literal_eval(arg)
 
 
 
@@ -94,6 +92,7 @@ def main(argv):
 
     cls_obj = Generate_Scaled_Apriltags(file_input, out_dir, orig_tag_side_length, desired_tag_side_length, margin_factor, tag_numbers)
     cls_obj.gen_april_tag()
+    print "file printed to: ", out_dir
 
 if __name__ == '__main__':
     main(sys.argv[1:])
