@@ -1,4 +1,4 @@
-#CSV Account Transactions to Sankey Diagram
+# CSV Account Transactions to Sankey Diagram
 
 This script takes in a csv file and allows the generation of a Sankey diagram.
 
