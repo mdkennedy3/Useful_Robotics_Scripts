@@ -1,0 +1,61 @@
+DATE,DESCRIPTION,AMOUNT,Category
+N/a,Committed expense 1,"-$40,000.00",Committed Expense
+N/a,Committed expense 2,"-$2,000.00",Committed Expense
+N/a,Committed expense 3,"-$75,000.00",Committed Expense
+12/14/2022,Paypal,$154.00,Online Store
+12/09/2022,PayPal,-$1.65,Paypal transaction expense
+12/05/2022,PayPal,-$0.84,Paypal transaction expense
+12/05/2022,PayPal,-$0.84,Paypal transaction expense
+12/05/2022,PayPal,-$0.84,Paypal transaction expense
+12/01/2022,Intuit,-$85.00,Operation Expense
+11/14/2022,Consultant,-$100.00,Operation Expense
+11/04/2022,Donation,"$60,000.00",Partner Donation
+10/31/2022,Intuit,-$85.00,Operation Expense
+10/17/2022,Website,-$252.00,Operation Expense
+10/17/2022,Account Maintenance Fee,-$170.00,Bank Fee
+10/05/2022,Intuit,$103.50,Reimbursement and Misc
+10/03/2022,Intuit,-$200.00,Operation Expense
+09/23/2022,Webservice,-$300.00,Operation Expense
+09/22/2022,Honorarium,-$400.00,Honorarium
+09/22/2022,Honorarium,-$300.00,Honorarium
+08/31/2022,Intuit,-$200.00,Operation Expense
+08/30/2022,Networking event,"-$1,781.26",Chapter Expense
+08/23/2022,Photography service,-$221.65,Chapter Expense
+08/20/2022,Robotics kit purchased online,-$195.33,Workshop kit and shipping
+08/08/2022,Eventbrite,$180.00,Workshop kit and shipping
+08/01/2022,Robotics kit purchased online,-$103.76,Workshop kit and shipping
+08/01/2022,Intuit,-$180.00,Operation Expense
+08/01/2022,Eventbrite,$120.00,Workshop Registration fee
+07/26/2022,Robotics kit purchased online,-$104.23,Workshop kit and shipping
+07/25/2022,Robotics kit purchased online,-$107.06,Workshop kit and shipping
+07/25/2022,Robotics kit purchased online,-$106.93,Workshop kit and shipping
+07/25/2022,Eventbrite,$75.00,Workshop Registration fee
+07/21/2022,Robotics kit purchased online,-$70.18,Workshop kit and shipping
+07/20/2022,Robotics kit purchased online,-$105.21,Workshop kit and shipping
+07/20/2022,Robotics kit purchased online,-$106.20,Workshop kit and shipping
+07/20/2022,Robotics kit purchased online,-$104.23,Workshop kit and shipping
+07/19/2022,Robotics kit purchased online,-$205.98,Workshop kit and shipping
+07/19/2022,Robotics kit purchased online,-$107.55,Workshop kit and shipping
+07/12/2022,Robotics kit purchased online,-$102.06,Workshop kit and shipping
+07/12/2022,Website,-$40.00,Operation Expense
+07/12/2022,Robotics kit purchased online,-$106.15,Workshop kit and shipping
+07/12/2022,Robotics kit purchased online,-$207.96,Workshop kit and shipping
+07/09/2022,Robotics kit purchased online,-$105.38,Workshop kit and shipping
+07/01/2022,Account Services,-$180.00,Operation Expense
+06/13/2022,PayPal (add to balance),-$250.00,Operation Expense
+06/03/2022,Donation from Organization 2,"$50,000.00",Partner Donation
+05/31/2022,Account Services,-$180.00,Operation Expense
+05/31/2022,Amazon,-$100.00,Resume Book Promotion 
+05/26/2022,Amazon,-$200.00,Resume Book Promotion 
+05/19/2022,Amazon,-$75.00,Resume Book Promotion 
+05/02/2022,Account Services,-$180.00,Operation Expense
+03/31/2022,Account Services,-$180.00,Operation Expense
+03/24/2022,Legal document filing fee,-$50.00,Operation Expense
+03/18/2022,Paypal,$1.45,Reimbursement and Misc
+03/17/2022,Consultant charge,-$250.00,Operation Expense
+03/14/2022,Analysis Service Charge,-$59.00,Bank Fee
+03/07/2022,Shipping,-$18.20,Operation Expense
+03/03/2022,Account Services,-$180.00,Operation Expense
+02/14/2022,Donation from Organization,"$100,000.00",Partner Donation
+01/31/2022,Account Services,-$180.00,Operation Expense
+01/01/2022,Year Starting Balance,"$87,190.53",Initial Year Balance
